@@ -17,6 +17,18 @@ public class Main {
         int number;
         String model;
         int weight;
+        public Phone(int number, String model, int weight) {
+            this.number = number;
+            this.model = model;
+            this.weight = weight;
+        }
+        public Phone(int number, String model){
+            this.number = number;
+            this.model = model;
+        }
+        public Phone(){
+
+        }
         public void receiveCall(String name){
             System.out.println("Звонит "+ name);
         }
