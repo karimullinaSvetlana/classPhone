@@ -12,28 +12,11 @@ public class Main {
         phone1.getNumber();
         phone2.getNumber();
         phone3.getNumber();
-    }
-    public static class Phone {
-        int number;
-        String model;
-        int weight;
-        public Phone(int number, String model, int weight) {
-            this.number = number;
-            this.model = model;
-            this.weight = weight;
-        }
-        public Phone(int number, String model){
-            this.number = number;
-            this.model = model;
-        }
-        public Phone(){
-
-        }
-        public void receiveCall(String name){
-            System.out.println("Звонит "+ name);
-        }
-        public void getNumber() {
-            System.out.println(this.number);
-        }
+        phone1.receiveCall("Паша", 2654);
+        phone2.receiveCall("Саша", 7954);
+        phone3.receiveCall("Наташа", 4125);
+        phone1.sendMessage(5258,6741,5123);
+        phone2.sendMessage(2459,7541,2654);
+        phone3.sendMessage(1895,9641,8225);
     }
 }
